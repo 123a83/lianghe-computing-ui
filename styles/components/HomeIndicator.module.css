@@ -1,0 +1,18 @@
+.homeIndicator {
+  position: fixed;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 134px;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+  z-index: 1000;
+}
+
+@media (max-width: 375px) {
+  .homeIndicator {
+    width: 120px;
+    height: 4px;
+  }
+}
