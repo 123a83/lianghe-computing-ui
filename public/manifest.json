@@ -1,0 +1,16 @@
+{
+  "name": "量合-算力即未来",
+  "short_name": "量合",
+  "description": "量合算力平台移动端应用",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#4a90e2",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}
