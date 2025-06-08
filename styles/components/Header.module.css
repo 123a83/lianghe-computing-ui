@@ -1,17 +1,15 @@
-/* 增强头部设计 */
+/* 简洁的头部设计 */
 .header {
   background: url('/lianghe-bg.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
-  padding: 40px 20px;
+  padding: 60px 20px;
   text-align: center;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-/* 添加一层半透明渐变覆盖层，确保文字可读性 */
+/* 添加简单的半透明覆盖层，确保文字可读性 */
 .header::before {
   content: '';
   position: absolute;
@@ -19,69 +17,17 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, 
-    rgba(74, 144, 226, 0.7) 0%, 
-    rgba(66, 212, 244, 0.7) 25%, 
-    rgba(255, 107, 53, 0.7) 75%, 
-    rgba(247, 147, 30, 0.7) 100%);
-  background-size: 300% 300%;
-  animation: gradientFlow 8s ease infinite;
+  background: rgba(0, 0, 0, 0.4);
   z-index: 1;
-}
-
-@keyframes gradientFlow {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-.header::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: 
-    radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 70% 70%, rgba(138, 43, 226, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
-  z-index: 1;
-}
-
-@keyframes rotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
 }
 
 .header h1 {
   font-size: 36px;
   color: #ffffff;
   font-weight: 800;
-  margin-bottom: 8px;
-  text-shadow: 
-    0 2px 4px rgba(0, 0, 0, 0.5),
-    0 0 30px rgba(255, 255, 255, 0.5),
-    0 0 60px rgba(66, 212, 244, 0.3);
+  margin: 0;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
   letter-spacing: 2px;
-  animation: titlePulse 3s ease-in-out infinite;
   position: relative;
   z-index: 2;
-}
-
-@keyframes titlePulse {
-  0%, 100% { 
-    transform: scale(1); 
-    text-shadow: 
-      0 2px 4px rgba(0, 0, 0, 0.5),
-      0 0 30px rgba(255, 255, 255, 0.5),
-      0 0 60px rgba(66, 212, 244, 0.3);
-  }
-  50% { 
-    transform: scale(1.05); 
-    text-shadow: 
-      0 2px 4px rgba(0, 0, 0, 0.6),
-      0 0 40px rgba(255, 255, 255, 0.7),
-      0 0 80px rgba(66, 212, 244, 0.5);
-  }
 }
