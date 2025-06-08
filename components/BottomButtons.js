@@ -21,10 +21,27 @@ export default function BottomButtons() {
   return (
     <>
       <div className={styles.bottomButtons}>
-        <button className={styles.primaryBtn} onClick={handleGetValue}>
-          <i className="fas fa-bolt"></i>
-          获取量值
-        </button>
+        <div className={styles.chargeContainer}>
+          <div className={styles.chargeLabel}>
+            <i className="fas fa-wallet"></i>
+            充值中心
+          </div>
+          <button className={styles.primaryBtn} onClick={handleGetValue}>
+            <div className={styles.btnContent}>
+              <div className={styles.btnIcon}>
+                <i className="fas fa-bolt"></i>
+              </div>
+              <div className={styles.btnText}>
+                <span className={styles.mainText}>立即充值</span>
+                <span className={styles.subText}>获取量值 享受算力变现</span>
+              </div>
+              <div className={styles.btnArrow}>
+                <i className="fas fa-chevron-right"></i>
+              </div>
+            </div>
+            <div className={styles.glowEffect}></div>
+          </button>
+        </div>
       </div>
 
       {/* 获取量值模态框 */}
@@ -34,7 +51,7 @@ export default function BottomButtons() {
             <div className={styles.modalHeader}>
               <h3>
                 <i className="fas fa-coins"></i>
-                获取量值
+                充值获取量值
               </h3>
               <button className={styles.closeBtn} onClick={handleCloseModal}>
                 <i className="fas fa-times"></i>
@@ -43,8 +60,8 @@ export default function BottomButtons() {
             
             <div className={styles.modalBody}>
               <div className={styles.valueNotice}>
-                <i className="fas fa-info-circle"></i>
-                选择下方套餐，支付成功后量值立即到账
+                <i className="fas fa-rocket"></i>
+                选择充值套餐，支付成功后量值立即到账，开启算力之旅
               </div>
               
               <div className={styles.packageGrid}>

@@ -6,7 +6,6 @@ import Notification from '../components/Notification'
 import StatsContainer from '../components/StatsContainer'
 import RecordsSection from '../components/RecordsSection'
 import BottomButtons from '../components/BottomButtons'
-import HomeIndicator from '../components/HomeIndicator'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -37,7 +36,6 @@ export default function Home() {
         </div>
         
         <BottomButtons />
-        <HomeIndicator />
       </div>
     </>
   )
