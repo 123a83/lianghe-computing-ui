@@ -5,7 +5,6 @@ export default function Document() {
     <Html lang="zh-CN">
       <Head>
         <meta charSet="UTF-8" />
-        <title>量合-算力即未来</title>
       </Head>
       <body>
         <Main />
